@@ -221,7 +221,7 @@ app.post("/api/kittens", async (req, res, next) => {
   }
 });
 
-app.patch('/api/kittens/', async (req, res, next) => {
+app.patch('/api/kittens/', async (req, res, next) => { //DELETE? 2 helyről kérdézni?
   const kittenId = req.query.kitten;
   const employeeId = req.query.employee;
   const newKittens = req.body;//{ ...employee, kittens: updatedKittens }
